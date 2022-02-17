@@ -10,3 +10,9 @@ jobs:
       - name: 'Secondline'
         run: echo Helow World!!
              echo Helow World Again!!
+      - name: 'Training Model'
+        run: |
+          python test.py
+          echo "## Model Metrics" > README.md
+          cat test.txt >> report.md
+
