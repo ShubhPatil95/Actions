@@ -13,6 +13,4 @@ jobs:
       - name: 'Training Model'
         run: |
           python test.py
-          echo "## Model Metrics" > README.md
-          cat test.txt >> report.md
-
+          echo "## Model Metrics" >> README.md
