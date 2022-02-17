@@ -1,20 +1,16 @@
 name: Issue - Opener
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-  
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       uses: actions/checkout@v2.3.4 
-      
     - name: run a oneline script
       run: echo Hellow,Word!
     - name: run a secondline script
