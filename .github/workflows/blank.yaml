@@ -1,19 +1,17 @@
 name: Issue - Opener
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-  workflow_dispatch:
+push:
+branches: [main]
+pull_request:
+workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  run:
+    runs-on: [ubuntu-latest]
     steps:
-      uses: actions/checkout@v2.3.4 
-    - name: run a oneline script
-      run: echo Hellow,Word!
-    - name: run a secondline script
-      run: |
-        echo Hellow,Word!
-        echo Hellow,Word!
+      - uses: actions/checkout@v2
+      - name: 'Oneline'
+        run: echo Helow World!!
+      - name: 'Secondline'
+        run: echo Helow World!!
+             echo Helow World Again!!
